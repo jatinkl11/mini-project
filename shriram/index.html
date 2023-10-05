@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtain Animation</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    #curtain-container {
+      width: 100%;
+      height: 100vh;
+      background: no-repeat center url(images/ramjikijai.gif) ;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+    .curtain {
+      width: 50%;
+      height: 100%;
+      background-color: #333;
+      transform-origin: left;
+      transition: transform 1s;
+    }
+    #animateButton {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 35px;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 42px;
+    border: 5px solid orangered;
+    background-color: darkorange;
+    color: yellow;
+    font-weight: 600;
+}
+button#animateButton:hover {
+    border: 5px solid red;
+    box-shadow: 1px 3px red;
+}
+    #leftCurtain {
+        background: rgb(227, 114, 9);
+    }
+    #rightCurtain {
+        background: rgb(199, 80, 29);
+    }
+    img.pio {
+    width: 40%;
+    margin: 102px;
+    border-radius: 42px;
+    border: 9px solid orangered;
+}
+  </style>
+</head>
+<body>
+  <div id="curtain-container">
+    <div class="curtain" id="leftCurtain"><img class="dio" src="images/sriramji.gif"></div>
+    <div class="curtain" id="rightCurtain"><img class="pio" src="images/hanumanji.gif"></div>
+  </div>
+  <button class="nio" id="animateButton">राम</button>
+  <script src="script.js"></script>
+</body>
+</html>
