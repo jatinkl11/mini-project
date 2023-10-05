@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="display">
+        <input id="screen" type="text" placeholder="0" />
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <button id="clearEntry" class="btn" onclick="clearEntry()">CE</button>
+          <button class="btn" onclick="fact()">x!</button>
+          <button class="btn">(</button>
+          <button class="btn">)</button>
+          <button class="btn">%</button>
+          <button id="allClear" class="btn" onclick="screen.value=''">
+            AC
+          </button>
+          <button class="btn" onclick="sin()">Sin</button>
+          <button class="btn" onclick="pi()">Pi</button>
+          <button class="btn">7</button>
+          <button class="btn">8</button>
+          <button class="btn">9</button>
+          <button class="btn">÷</button>
+
+
+
+
+          <button class="btn" onclick="cos()">Cos</button>
+          <button class="btn" onclick="log()">log</button>
+          <button class="btn">4</button>
+          <button class="btn">5</button>
+          <button class="btn">6</button>
+          <button class="btn">*</button>
+
+
+
+          <button class="btn" onclick="tan()">tan</button>
+          <button class="btn" onclick="sqrt()">√</button>
+          <button class="btn">1</button>
+          <button class="btn">2</button>
+          <button class="btn">3</button>
+          <button class="btn">-</button>
+
+
+
+         <button class="btn" onclick="e()">e</button>
+          <button class="btn" onclick="pow()">x<sup>2</sup></button>
+          <button class="btn">0</button>
+          <button class="btn">.</button>
+          <button id="eval"class="btn" onclick="screen.value=parseFloat(eval(screen.value).toFixed(6))">
+            =
+          </button>
+          <button class="btn">+</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

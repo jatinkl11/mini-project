@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400&family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+:root {
+    font-size: 10px;
+  }
+
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4e88b1;
+  }
+
+
+  
+main {
+    width: 40%;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 0.25s ease-in;
+    box-shadow: 12px 12px 20px #16c62d, -12px -12px 20px white;
+  }
+
+
+
+  @media screen and (max-width: 720px) {
+    main{
+      width: 60%;
+    }
+  }
+
+
+  .display #screen {
+    font-family: "Orbitron", sans-serif;
+    width: 50%;
+    height: 50px;
+    font-size: 35px;
+    border: none;
+    text-align: right;
+    background-color: #ece0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    padding: 1rem;
+    margin: -156px 0px 0px 0px;
+    position: absolute;
+    border: 5px solid rgb(143, 134, 134);
+}
+
+.buttons {
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 22px solid rgb(143, 134, 134);
+}
+  .row {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .btn {
+    height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    transition: all 0.1s;
+    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+    font-weight: 700;
+}
+  /* .btn:hover {
+    background-color: #fff;
+    box-shadow: 5px 5px 8px rgba(16, 16, 16, 0.1), -5px -5px 8px #fff;
+  } */
+  
+  #eval {
+    color: #fff;
+    background-color: #33ccff;
+  }
+  #eval:hover {
+    box-shadow: 3px 3px 8px #00ace6, -3px -3px 8px #33ccff;
+  }
+  
+  #allClear {
+    color: #fff;
+    background-color: #33cc33;
+  }
+  #allClear:hover {
+    box-shadow: 3px 3px 8px #2eb82e, -3px -3px 8px #33cc33;
+  }
+  
+  #clearEntry {
+    color: #fff;
+    background-color: #ff3399;
+  }
+  #clearEntry:hover {
+    box-shadow: 3px 3px 8px #e60073, -3px -3px 8px #ff3399;
+  }
+  
